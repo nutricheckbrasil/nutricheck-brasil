@@ -1,0 +1,9 @@
+# Permitir acesso a arquivos de imagem
+<FilesMatch "\.(jpg|jpeg|png|gif)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Configurações de segurança
+Options -Indexes
+

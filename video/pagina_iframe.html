@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página com Iframe - Plataforma SaberSaúde</title>
+  <style>
+    :root{ --bg:#0f1724; --card:#0b1220; --text:#e6eef8 }
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#071020 0%, #0a1a2a 100%);color:var(--text)}
+    .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:32px}
+    .card{width:100%;max-width:900px;background:rgba(255,255,255,0.02);padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    h1{font-size:20px;margin:0 0 12px}
+    p{margin:0 0 16px;color:rgba(230,238,248,0.8)}
+
+    /* Container responsivo para o iframe (16:9) */
+    .iframe-container{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px}
+    .iframe-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+
+    .meta{font-size:13px;opacity:0.8;margin-top:12px}
+    a.btn{display:inline-block;padding:8px 12px;border-radius:8px;background:#0ea5a4;color:#042024;text-decoration:none;font-weight:600;margin-top:12px}
+
+    @media (max-width:420px){.card{padding:12px}h1{font-size:18px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Player incorporado para teste</h1>
+      <p>Iframe incorporado .</p>
+
+      <div class="iframe-container">
+        <iframe src="https://video.consenticheck.com.br/embed.php?video_id=4&theme=default" width="800" height="450" allowfullscreen title="Player SaberSaúde"></iframe>
+      </div>
+
+     
+    </div>
+  </div>
+</body>
+</html>

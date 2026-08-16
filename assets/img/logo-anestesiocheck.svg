@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logotipo Anestesiocheck">
+    <defs>
+        <linearGradient id="logoBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#00A0FF"/>
+            <stop offset="100%" stop-color="#0080E5"/>
+        </linearGradient>
+    </defs>
+    <rect x="10" y="40" width="140" height="120" rx="24" fill="url(#logoBlue)"/>
+    <path d="M80 65
+             C70 50, 40 50, 40 80
+             C40 120, 80 145, 80 145
+             C80 145, 120 120, 120 80
+             C120 50, 90 50, 80 65 Z"
+          fill="none"
+          stroke="#FFFFFF"
+          stroke-width="9"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+    <path d="M45 103 L63 103 L72 75 L82 135 L92 95 L102 120 L110 90 L120 103"
+          fill="none"
+          stroke="#FFFFFF"
+          stroke-width="9"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+    <text x="180" y="125"
+          font-family="Poppins, 'Segoe UI', Arial, sans-serif"
+          font-size="88"
+          font-weight="600"
+          fill="#0097F5"
+          letter-spacing="1">
+        Anestesiocheck
+    </text>
+</svg>
+

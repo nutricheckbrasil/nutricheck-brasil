@@ -1,0 +1,15 @@
+{
+    "name": "video-platform/demo",
+    "description": "Sistema de Vídeo Interativo - Demo com PHPMailer",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "VideoPlat\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
+

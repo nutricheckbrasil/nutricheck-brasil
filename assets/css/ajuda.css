@@ -1,0 +1,248 @@
+/* Estilos específicos para páginas de Ajuda e Suporte */
+
+/* Timeline para histórico de respostas */
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e9ecef;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-item .avatar {
+    position: relative;
+    z-index: 2;
+}
+
+/* Cards com hover effect */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Botões com efeito de loading */
+.btn-loading {
+    position: relative;
+    pointer-events: none;
+}
+
+.btn-loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid transparent;
+    border-top-color: currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Accordion customizado */
+.accordion-button:not(.collapsed) {
+    background-color: #f3effd;
+    color: #9b87f5;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(155, 135, 245, 0.25);
+}
+
+/* Badges com animação */
+.badge {
+    transition: all 0.2s ease-in-out;
+}
+
+.badge:hover {
+    transform: scale(1.05);
+}
+
+/* Status indicators */
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.status-aberto { background-color: #9b87f5; }
+.status-em_andamento { background-color: #ffc107; }
+.status-aguardando_resposta { background-color: #17a2b8; }
+.status-resolvido { background-color: #198754; }
+.status-fechado { background-color: #6c757d; }
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 15px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn-group-sm .btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Animações de entrada */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilos para formulários */
+.form-control:focus {
+    border-color: #9b87f5;
+    box-shadow: 0 0 0 0.25rem rgba(155, 135, 245, 0.25);
+}
+
+.form-select:focus {
+    border-color: #9b87f5;
+    box-shadow: 0 0 0 0.25rem rgba(155, 135, 245, 0.25);
+}
+
+/* Estilos para modais */
+.modal-content {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+}
+
+/* Estilos para alertas */
+.alert {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Estilos para tabelas */
+.table th {
+    border-top: none;
+    font-weight: 600;
+    color: #495057;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(155, 135, 245, 0.08);
+}
+
+/* Estilos para botões */
+.btn {
+    border-radius: 0.375rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #9b87f5;
+    border-color: #9b87f5;
+}
+
+.btn-primary:hover {
+    background-color: #7c6bb8;
+    border-color: #6b5ba8;
+}
+
+/* Estilos para navegação */
+.nav-link {
+    border-radius: 0.375rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: rgba(155, 135, 245, 0.12);
+}
+
+.nav-link.active {
+    background-color: #9b87f5 !important;
+    color: white !important;
+}
+
+/* Estilos para sidebar */
+.sidebar-link-lg {
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar-link-lg:hover {
+    background-color: rgba(155, 135, 245, 0.12);
+    transform: translateX(5px);
+}
+
+/* Estilos para loading states */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #9b87f5;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+} 

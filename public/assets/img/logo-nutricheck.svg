@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logotipo NutriCheck - Nutrição Hospitalar">
+    <defs>
+        <linearGradient id="logoPurple" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#b19cd9"/>
+            <stop offset="100%" stop-color="#9b87f5"/>
+        </linearGradient>
+    </defs>
+    <rect x="10" y="40" width="140" height="120" rx="24" fill="url(#logoPurple)"/>
+    <!-- Prancheta (protocolo/dieta hospitalar) + folha (nutrição) -->
+    <rect x="35" y="55" width="90" height="95" rx="6" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M50 55 L50 42 L110 42 L110 55" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+    <path d="M80 85 Q88 70 98 78 Q92 95 80 102 Q68 95 62 78 Q72 70 80 85" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="180" y="125"
+          font-family="Poppins, 'Segoe UI', Arial, sans-serif"
+          font-size="88"
+          font-weight="600"
+          fill="#9b87f5"
+          letter-spacing="1">
+        NutriCheck
+    </text>
+</svg>
